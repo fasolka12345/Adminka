@@ -10,11 +10,20 @@ const findCategoryById = require('../middlewares/categories');
 const updateCategory = require('../middlewares/categories');
 const sendCategoryUpdated = require('../controllers/categories');
 
+const deleteCategory = require('../middlewares/categories');
+const sendCategoryDeleted = require('../controllers/categories');
+
+const checkIsCategoryExists = require('../middlewares/categories');
+const checkEmptyName = require('../middlewares/categories')
+
 categoriesRouter.get('/categories', findAllCategories, sendAllCategories);
-categoriesRouter.post("/categories", findAllCategories, createCategory, sendCategoryCreated); 
 
-gamesRouter.get("/games/:id", findCategoryById, sendCategoryById);
+categoriesRouter.post("/categories", findAllCategories, checkIsCategoryExists, checkEmptyName, createCategory, sendCategoryCreated); 
 
-categoriesRouter.put("/categories/:id", updateCategory, sendCategoryUpdated );
+categoriesRouter.get("/categories/:id", findCategoryById, sendCategoryById);
+
+categoriesRouter.put("/categories/:id", checkEmptyName, updateCategory, sendCategoryUpdated );
+
+categoriesRouter.delete("/categories/:id", deleteCategory, sendCategoryDeleted);
 
 module.exports = categoriesRouter;
