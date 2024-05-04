@@ -13,4 +13,4 @@ categoriesRouter.put("/categories/:id", checkEmptyName, updateCategory, sendCate
 
 categoriesRouter.delete("/categories/:id", deleteCategory, sendCategoryDeleted);
 
-module.exports = categoriesRouter;
+module.exports = categoriesRouter; //
