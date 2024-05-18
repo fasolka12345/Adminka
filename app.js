@@ -12,7 +12,7 @@ const express = require('express');
  const PORT = 3001;
  
  connectToDatabase();
- 
+ //
  app.use(
    cors, 
    cookieParser(),
