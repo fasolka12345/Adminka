@@ -72,7 +72,7 @@ const checkEmptyName = async (req, res, next) => {
         res.status(400).send(JSON.stringify({ message: "Введите название категории" }));
   } else {
     next();
-  }
+  }//
 };
 
 
