@@ -1,5 +1,5 @@
 Ссылка на репозиторий с фронтендом: https://github.com/fasolka12345/games-rating
 
-Ссылка на домен фронтенда: 
+Ссылка на домен фронтенда: https://izuminka.nomoredomainswork.ru/
 
-IP-адрес: <ip-адрес твоего сервера>
+IP-адрес: 158.160.156.242
