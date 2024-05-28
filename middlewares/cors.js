@@ -1,7 +1,8 @@
 const allowedCors = [
     'http://localhost:3000',
     'http://localhost:3001',
-    "https://izuminka.nomoredomainswork.ru"
+    "https://izuminka.nomoredomainswork.ru",
+    "https://fasolka.nomoredomainswork.ru"
 ];
 
 function cors(req, res, next) {
